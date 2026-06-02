@@ -25,10 +25,11 @@ workflows:
             -scheme Wikipedia \
             -sdk iphonesimulator \
             -configuration Debug \
+            -derivedDataPath build/DerivedData \
             CODE_SIGNING_ALLOWED=NO \
             build
 
     artifacts:
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+      - build/DerivedData/Build/Products/Debug-iphonesimulator/*.app
+      - build/DerivedData/Build/Products/Debug-iphonesimulator/*.dSYM
       - /tmp/xcodebuild_logs/*.log
