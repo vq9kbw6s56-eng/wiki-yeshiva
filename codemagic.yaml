@@ -27,3 +27,8 @@ workflows:
             -configuration Debug \
             CODE_SIGNING_ALLOWED=NO \
             build
+
+    artifacts:
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+      - /tmp/xcodebuild_logs/*.log
