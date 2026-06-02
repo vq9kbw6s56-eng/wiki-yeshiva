@@ -176,8 +176,8 @@ public class Configuration: NSObject {
     struct Path {
         static let wikiResourceComponent = ["wiki"]
         static let restBaseAPIComponents = ["api", "rest_v1"]
-        static let mediaWikiAPIComponents = ["w", "api.php"]
-        static let mediaWikiRestAPIComponents = ["w", "rest.php"]
+        static let mediaWikiAPIComponents = ["wiki", "api.php"]
+        static let mediaWikiRestAPIComponents = ["wiki", "rest.php"]
         static let expandedWikiResourceComponents = ["w", "index.php"]
     }
     
