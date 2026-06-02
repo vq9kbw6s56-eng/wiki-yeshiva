@@ -4,7 +4,7 @@ enum APIURLComponentsBuilderError: Error {
     case failureConvertingJsonDataToString
 }
 
-/// APIURLComponentsBuilder stores API host components and the base path (/w/api.php, /api/rest_v1, etc) and builds URLs for various endpoints
+/// APIURLComponentsBuilder stores API host components and the base path (/wiki/api.php, /api/rest_v1, etc) and builds URLs for various endpoints
 public struct APIURLComponentsBuilder {
     let hostComponents: URLComponents
     let basePathComponents: [String]
